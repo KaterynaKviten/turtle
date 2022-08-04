@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turtles</title>
+    <style>
+      body {
+        display: block;
+        text-align: center;
+        background: linear-gradient(
+          109.6deg,
+          rgb(17, 151, 147) 11.2%,
+          rgb(154, 214, 212) 55.4%,
+          rgb(255, 233, 171) 100.2%
+        );
+      }
+      h1 {
+        display: block;
+        text-align: center;
+        margin: auto;
+      }
+      h2 {
+        display: block;
+        text-align: center;
+        font-size: 42px;
+        font-family: Cochin;
+        margin: 0 0 15px 0;
+        color: whitesmoke;
+      }
+      h3 {
+        display: block;
+        text-align: center;
+        margin: auto;
+      }
+      h4 {
+        display: block;
+        text-align: center;
+      }
+      .mySlides {
+        border-radius: 20px;
+      }
+      .aboutWho {
+        margin: 10px auto;
+        font-size: 30px;
+        font-family: Cochin;
+        padding: 10px 10px;
+        background-color: #1e9ea5;
+        border-radius: 5px;
+        width: 600px;
+      }
+      .intro {
+        font-style: italic;
+        font-size: 20px;
+        font-family: Cochin;
+        font-weight: lighter;
+        width: 450px;
+        margin: auto;
+        color: rgb(35, 35, 36);
+      }
+      .qWhy {
+        font-size: 30px;
+        font-family: Cochin;
+        font-weight: bolder;
+        width: 600px;
+        margin: 10px auto;
+        padding-bottom: 10px;
+        padding: 10px 10px;
+        background-color: #1e9ea5;
+        border-radius: 5px;
+      }
+      .aWhy {
+        text-align: justify;
+        font-size: 18px;
+        font-family: Cochin;
+        font-weight: lighter;
+        width: 600px;
+        margin: auto;
+        color: rgb(35, 35, 36);
+      }
+      .whatToDo {
+        font-size: 30px;
+        font-family: Cochin;
+        font-weight: bolder;
+        padding: 10px 10px;
+        background-color: #1e9ea5;
+        border-radius: 5px;
+        margin: 10px auto;
+        width: 600px;
+      }
+      .listMain {
+        text-align: justify;
+        font-size: 18px;
+        font-family: Cochin;
+        display: block;
+        margin: auto;
+        width: 600px;
+        color: rgb(35, 35, 36);
+      }
+      button {
+        background: #3a63d4;
+        color: #fffaef;
+        transition: all 250ms ease;
+        padding: 25px;
+        border: 1px solid #1a58d0;
+        border-radius: 30px;
+        box-shadow: 2px 2px 10px #837f8b;
+        font-family: Cochin;
+        font-size: 24px;
+        margin: 7px 0px 15px 0px;
+      }
+      button:hover {
+        background: #1e9ea5;
+        border: 1px solid #1e9ea5;
+        color: rgb(35, 35, 36);
+      }
+      .titleForlink {
+        display: block;
+        text-align: center;
+        font-size: 26px;
+        font-family: Cochin;
+        margin: auto;
+      }
+      .links {
+        text-align: left;
+        width: 600px;
+        margin: auto;
+      }
+
+      .nationalgeo {
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Cochin;
+        margin: auto;
+        display: inline-flex;
+      }
+      .nationalgeo:hover {
+        text-decoration: underline;
+      }
+      .greenpeace {
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Cochin;
+        margin: auto;
+        display: inline-flex;
+      }
+      .greenpeace:hover {
+        text-decoration: underline;
+      }
+      .codedBy {
+        font-family: monospace;
+        font-size: 14px;
+        margin: auto;
+        padding-top: 5px;
+      }
+
+      .slideshowContainer {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      .mySlides {
+        display: block;
+      }
+      .dot {
+        cursor: pointer;
+        height: 12px;
+        width: 12px;
+        margin: 0 2px;
+        background-color: rgb(47, 120, 231);
+        border-radius: 50%;
+        display: inline-block;
+        transition: 0.5s ease;
+        -webkit-font-smoothing: antialiased;
+      }
+      .dot:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <img
+          class="turtleSymbol"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/920/original/c_122067_%282%29.png?1652188233"
+          alt="Turtles symbol"
+          width="100px"
+        />
+      </h1>
+      <h2>💦 Save The Ocean 💦</h2>
+      <hr />
+      <h3>
+        <div class="aboutWho">Turtles</div>
+        <div class="intro">
+          For more than 100 million years sea turtles have covered vast
+          distances across the world's oceans, filling a vital role in the
+          balance of marine habitats.
+        </div>
+      </h3>
+      <h4>
+        <div class="slideshowContainer">
+          <div class="mySlides fade">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/916/original/david-troeger-M8xxVih_V_U-unsplash.jpg?1652187088"
+              alt="turtle in water"
+              width="300"
+              height="400"
+              style="border-radius: 20px"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/914/original/jcob-nasyr-uGPBqF1Yls0-unsplash.jpg?1652187049"
+              alt="turtle 2"
+              width="300"
+              height="400"
+              style="border-radius: 20px"
+            />
+          </div>
+          <div class="mySlides fade">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/917/original/josh-miller-AEZEx7encQs-unsplash.jpg?1652187101"
+              alt="turtle 3"
+              width="300"
+              height="400"
+              style="border-radius: 20px"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/913/original/josue-soto-v9zljzMw0S8-unsplash.jpg?1652186932"
+              alt="turtle 4"
+              width="300"
+              height="400"
+              style="border-radius: 20px"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/918/original/abner-abiu-castillo-diaz-N5ByCirHVqw-unsplash.jpg?1652187418"
+              alt="turtle 5"
+              width="300"
+              height="400"
+              style="border-radius: 20px"
+            />
+          </div>
+        </div>
+        <br />
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </h4>
+      <div class="qWhy">Why they matter for ecosystems?</div>
+      <div class="aWhy">
+        Sea turtles are a fundamental link in marine ecosystems. They help
+        maintain the health of seagrass beds and coral reefs that benefit
+        commercially valuable species such as shrimp, lobster, and tuna. Sea
+        turtles are the live representatives of a group of reptiles that have
+        existed on Earth and traveled our seas for the last 100 million years.
+        Turtles have major cultural significance and tourism value.
+      </div>
+      <p span class="whatToDo">5 Things you can do to save sea turtles</p>
+      <ol class="listMain">
+        <li class="adv1">☑️Turn out lights visible from the beach!</li>
+        <li class="adv2">
+          ☑️Reduce the amount of garbage you produce and clean up trash you see
+          on the beach.
+        </li>
+        <li class="adv3">
+          ☑️Be aware of sea turtle nesting areas and avoid nesting and hatching
+          turtles.
+        </li>
+        <li class="adv4">☑️Reduce the amount of chemicals you use.</li>
+        <li class="adv5">☑️Volunteer!</li>
+      </ol>
+      <hr />
+      <p span class="titleForlink">More about ocean protecting🐟</p>
+      <br />
+      <p class="links">
+        <a
+          span
+          class="nationalgeo"
+          href="https://www.nationalgeographic.com/environment/article/10-things-you-can-do-to-save-the-ocean"
+          target="_blank"
+          >💡10 things you can do to save the ocean</a
+        >
+        <br />
+        <a
+          span
+          class="greenpeace"
+          href="https://www.greenpeace.org/usa/campaigns/oceans/"
+          target="_blank"
+          >💡More info on greenpeace.org</a
+        >
+      </p>
+      <br />
+      <button>Support turtles!</button>
+      <p class="codedBy">This page was built by Kateryna Shiurkova</p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/912/original/shell.png?1652186797"
+        alt="png"
+        width="50px"
+      />
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      function supportApplay() {
+        let name = prompt("What is your firstname?");
+        let email = prompt("What is your e-mail?");
+        alert("Thank you, " + name + "! We will contact you soon!");
+      }
+      let buttonClick = document.querySelector("button");
+      buttonClick.addEventListener("click", supportApplay);
+    </script>
+  </body>
+</html>
